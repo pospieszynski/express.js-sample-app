@@ -3,8 +3,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(request, response){
-  console.log("REQUEST OBJECT: " + REQUEST);
-  response.send("hello world");
+  response.render('./views/index.ejs')
 })
 
 app.listen(1337, function(){
