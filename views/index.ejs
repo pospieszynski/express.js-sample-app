@@ -3,11 +3,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sample app</title>
+  <title><%= title %></title>
 </head>
 
 <body>
-  <h1>Index page rendered</h1>
+  <h1>Desc: <%= items[0].desc %></h1>
+  <form action="/new", method="POST">
+    <input type="text", name="newItem"></input>
+    <input type="submit">
+  </form>
   <script src="js/scripts.js"></script>
 </body>
 </html>
